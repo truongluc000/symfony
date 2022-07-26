@@ -1,5 +1,5 @@
 <?php
-#move symfony to laragon
+#move symfony to laragon s
 use App\Kernel;
 require_once dirname(__DIR__).'/vendor/autoload_runtime.php';
 
