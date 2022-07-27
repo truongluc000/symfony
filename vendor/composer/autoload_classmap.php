@@ -6,6 +6,9 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'App\\Controller\\LuckyController' => $baseDir . '/src/Controller/LuckyController.php',
+    'App\\Controller\\MainController' => $baseDir . '/src/Controller/MainController.php',
+    'App\\Controller\\NewController' => $baseDir . '/src/Controller/NewController.php',
     'App\\Kernel' => $baseDir . '/src/Kernel.php',
     'Collator' => $vendorDir . '/symfony/polyfill-intl-icu/Resources/stubs/Collator.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',

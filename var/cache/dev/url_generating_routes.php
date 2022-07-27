@@ -16,4 +16,8 @@ return [
     '_profiler_router' => [['token'], ['_controller' => 'web_profiler.controller.router::panelAction'], [], [['text', '/router'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], [], []],
     '_profiler_exception' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::body'], [], [['text', '/exception'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], [], []],
     '_profiler_exception_css' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::stylesheet'], [], [['text', '/exception.css'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], [], []],
+    'app_lucky' => [[], ['_controller' => 'App\\Controller\\LuckyController::index'], [], [['text', '/lucky']], [], [], []],
+    'app_new' => [[], ['_controller' => 'App\\Controller\\NewController::index'], [], [['text', '/new']], [], [], []],
+    'app_lucky_number' => [[], ['_controller' => 'App\\Controller\\LuckyController::number'], [], [['text', '/lucky/number']], [], [], []],
+    'edit_lucky_number' => [['id', 'slug'], ['_controller' => 'App\\Controller\\LuckyController::edit'], [], [['variable', '-', '[^/]++', 'slug', true], ['variable', '/', '[^/\\-]++', 'id', true], ['text', '/lucky/edit']], [], [], []],
 ];
